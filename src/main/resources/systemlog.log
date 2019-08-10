@@ -2270,3 +2270,178 @@ Consider the following:
 2019-08-10 02:05:56.865  WARN 15108 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-10 02:05:57.054  INFO 15108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2019-08-10 02:05:57.056  INFO 15108 --- [main] in.yis.mains.YesExamApplication          : Started YesExamApplication in 3.845 seconds (JVM running for 4.346)
+2019-08-10 02:16:45.825  INFO 15108 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-10 02:16:45.826  INFO 15108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-10 02:16:45.834  INFO 15108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-08-10 02:16:45.879  WARN 15108 --- [http-nio-8080-exec-1] in.yis.mains.config.JwtRequestFilter     : JWT Token does not begin with Bearer String
+2019-08-10 02:20:11.499  INFO 15108 --- [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-10 02:20:11.502  INFO 15108 --- [RMI TCP Connection(16)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-10 02:20:11.503  INFO 15108 --- [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-10 02:20:11.506  INFO 15108 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-10 02:20:11.513  INFO 15108 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-10 13:07:53.271  INFO 10684 --- [main] in.yis.mains.YesExamApplication          : Starting YesExamApplication on DESKTOP-ND7EUGQ with PID 10684 (C:\Users\sakib\eclipse-workspace\Yes-Exam\target\classes started by sakib in C:\Users\sakib\eclipse-workspace\Yes-Exam)
+2019-08-10 13:07:53.273  INFO 10684 --- [main] in.yis.mains.YesExamApplication          : No active profile set, falling back to default profiles: default
+2019-08-10 13:07:54.935  INFO 10684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-10 13:07:55.008  INFO 10684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2019-08-10 13:07:55.280  INFO 10684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb3d7b56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:07:55.318  INFO 10684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$83eb4390] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:07:55.323  INFO 10684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:07:55.327  INFO 10684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@79c4715d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:07:55.329  INFO 10684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$a8bfe642] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:07:55.364  INFO 10684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:07:55.598  INFO 10684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-10 13:07:55.616  INFO 10684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-10 13:07:55.616  INFO 10684 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-10 13:07:55.745  INFO 10684 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-10 13:07:55.745  INFO 10684 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2437 ms
+2019-08-10 13:07:56.128  INFO 10684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-10 13:07:58.058  INFO 10684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-10 13:07:58.098  INFO 10684 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-10 13:07:58.234  INFO 10684 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-10 13:07:58.237  INFO 10684 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-10 13:07:58.374  INFO 10684 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-10 13:07:58.489  INFO 10684 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-10 13:07:58.791  INFO 10684 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-10 13:07:58.993  INFO 10684 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68d6d775, org.springframework.security.web.context.SecurityContextPersistenceFilter@19b206ee, org.springframework.security.web.header.HeaderWriterFilter@3f5156a6, org.springframework.security.web.authentication.logout.LogoutFilter@7f4701b1, in.yis.mains.config.JwtRequestFilter@52a36910, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f1483fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c8dbf56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b67cc70, org.springframework.security.web.session.SessionManagementFilter@6c479fdf, org.springframework.security.web.access.ExceptionTranslationFilter@33379242, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ceff87d]
+2019-08-10 13:07:59.136  INFO 10684 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-10 13:07:59.167  WARN 10684 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-10 13:07:59.342  INFO 10684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-10 13:07:59.344  INFO 10684 --- [main] in.yis.mains.YesExamApplication          : Started YesExamApplication in 6.434 seconds (JVM running for 7.393)
+2019-08-10 13:09:42.311  INFO 10684 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-10 13:09:42.312  INFO 10684 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-10 13:09:42.318  INFO 10684 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-08-10 13:09:42.409  WARN 10684 --- [http-nio-8080-exec-4] in.yis.mains.config.JwtRequestFilter     : JWT Token does not begin with Bearer String
+2019-08-10 13:11:50.777  INFO 10684 --- [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:415) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_201]
+
+2019-08-10 13:12:01.347  WARN 10684 --- [http-nio-8080-exec-1] in.yis.mains.config.JwtRequestFilter     : JWT Token does not begin with Bearer String
+2019-08-10 13:14:14.138  INFO 10684 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-10 13:14:14.140  INFO 10684 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-10 13:14:14.141  INFO 10684 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-10 13:14:14.143  INFO 10684 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-10 13:14:14.149  INFO 10684 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-10 13:14:16.684  INFO 2160 --- [main] in.yis.mains.YesExamApplication          : Starting YesExamApplication on DESKTOP-ND7EUGQ with PID 2160 (C:\Users\sakib\eclipse-workspace\Yes-Exam\target\classes started by sakib in C:\Users\sakib\eclipse-workspace\Yes-Exam)
+2019-08-10 13:14:16.687  INFO 2160 --- [main] in.yis.mains.YesExamApplication          : No active profile set, falling back to default profiles: default
+2019-08-10 13:14:17.166  INFO 2160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-10 13:14:17.186  INFO 2160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-08-10 13:14:17.430  INFO 2160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb0d96ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:17.457  INFO 2160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$53bb5f26] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:17.462  INFO 2160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:17.463  INFO 2160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3a7704c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:17.466  INFO 2160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$789001d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:17.468  INFO 2160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:17.673  INFO 2160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-10 13:14:17.689  INFO 2160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-10 13:14:17.690  INFO 2160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-10 13:14:17.778  INFO 2160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-10 13:14:17.779  INFO 2160 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1050 ms
+2019-08-10 13:14:17.925  INFO 2160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-10 13:14:18.670  INFO 2160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-10 13:14:18.711  INFO 2160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-10 13:14:18.824  INFO 2160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-10 13:14:18.825  INFO 2160 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-10 13:14:18.922  INFO 2160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-10 13:14:19.024  INFO 2160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-10 13:14:19.338  INFO 2160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-10 13:14:19.574  INFO 2160 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@479b5066, org.springframework.security.web.context.SecurityContextPersistenceFilter@939ff41, org.springframework.security.web.header.HeaderWriterFilter@24a2e565, org.springframework.security.web.authentication.logout.LogoutFilter@1b13467c, in.yis.mains.config.JwtRequestFilter@2e52fb3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48a663e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45b15381, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64deb58f, org.springframework.security.web.session.SessionManagementFilter@d257579, org.springframework.security.web.access.ExceptionTranslationFilter@7c1447b5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1682c08c]
+2019-08-10 13:14:19.724  INFO 2160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-10 13:14:19.756  WARN 2160 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-10 13:14:19.915  INFO 2160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-10 13:14:19.918  INFO 2160 --- [main] in.yis.mains.YesExamApplication          : Started YesExamApplication in 3.477 seconds (JVM running for 4.03)
+2019-08-10 13:14:27.826  INFO 2160 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-10 13:14:27.827  INFO 2160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-10 13:14:27.832  INFO 2160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-08-10 13:14:52.040  INFO 2160 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-10 13:14:52.042  INFO 2160 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-10 13:14:52.043  INFO 2160 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-10 13:14:52.045  INFO 2160 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-10 13:14:52.051  INFO 2160 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-10 13:14:54.533  INFO 4748 --- [main] in.yis.mains.YesExamApplication          : Starting YesExamApplication on DESKTOP-ND7EUGQ with PID 4748 (C:\Users\sakib\eclipse-workspace\Yes-Exam\target\classes started by sakib in C:\Users\sakib\eclipse-workspace\Yes-Exam)
+2019-08-10 13:14:54.539  INFO 4748 --- [main] in.yis.mains.YesExamApplication          : No active profile set, falling back to default profiles: default
+2019-08-10 13:14:54.992  INFO 4748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-10 13:14:55.010  INFO 4748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-08-10 13:14:55.245  INFO 4748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$52189fdf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:55.271  INFO 4748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$eac66819] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:55.276  INFO 4748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:55.277  INFO 4748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4d4d8fcf' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:55.279  INFO 4748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$f9b0acb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:55.288  INFO 4748 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:14:55.476  INFO 4748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-10 13:14:55.494  INFO 4748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-10 13:14:55.494  INFO 4748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-10 13:14:55.579  INFO 4748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-10 13:14:55.579  INFO 4748 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1009 ms
+2019-08-10 13:14:55.737  INFO 4748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-10 13:14:56.538  INFO 4748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-10 13:14:56.583  INFO 4748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-10 13:14:56.683  INFO 4748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-10 13:14:56.684  INFO 4748 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-10 13:14:56.777  INFO 4748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-10 13:14:56.879  INFO 4748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-10 13:14:57.165  INFO 4748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-10 13:14:57.383  INFO 4748 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d2e6b0b, org.springframework.security.web.context.SecurityContextPersistenceFilter@40729f01, org.springframework.security.web.header.HeaderWriterFilter@3138953b, org.springframework.security.web.authentication.logout.LogoutFilter@6e0e5dec, in.yis.mains.config.JwtRequestFilter@2d0bfb24, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d760326, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49e4c2d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f1cddf3, org.springframework.security.web.session.SessionManagementFilter@756aadfc, org.springframework.security.web.access.ExceptionTranslationFilter@3667faa8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a83495d]
+2019-08-10 13:14:57.535  INFO 4748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-10 13:14:57.568  WARN 4748 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-10 13:14:57.774  INFO 4748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-10 13:14:57.776  INFO 4748 --- [main] in.yis.mains.YesExamApplication          : Started YesExamApplication in 3.491 seconds (JVM running for 3.987)
+2019-08-10 13:15:05.973  INFO 4748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-10 13:15:05.974  INFO 4748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-10 13:15:05.981  INFO 4748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-08-10 13:15:17.745  WARN 4748 --- [http-nio-8080-exec-3] in.yis.mains.config.JwtRequestFilter     : JWT Token does not begin with Bearer String
+2019-08-10 13:24:36.213  INFO 4748 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-10 13:24:36.215  INFO 4748 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-10 13:24:36.216  INFO 4748 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-10 13:24:36.218  INFO 4748 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-10 13:24:36.224  INFO 4748 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-10 13:24:38.685  INFO 13640 --- [main] in.yis.mains.YesExamApplication          : Starting YesExamApplication on DESKTOP-ND7EUGQ with PID 13640 (C:\Users\sakib\eclipse-workspace\Yes-Exam\target\classes started by sakib in C:\Users\sakib\eclipse-workspace\Yes-Exam)
+2019-08-10 13:24:38.687  INFO 13640 --- [main] in.yis.mains.YesExamApplication          : No active profile set, falling back to default profiles: default
+2019-08-10 13:24:39.155  INFO 13640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-10 13:24:39.174  INFO 13640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-08-10 13:24:39.413  INFO 13640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d5021d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:24:39.442  INFO 13640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$e5fdea0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:24:39.447  INFO 13640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:24:39.448  INFO 13640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3c1e3314' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:24:39.450  INFO 13640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ad28cbc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:24:39.452  INFO 13640 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-10 13:24:39.650  INFO 13640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-10 13:24:39.666  INFO 13640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-10 13:24:39.667  INFO 13640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-10 13:24:39.752  INFO 13640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-10 13:24:39.752  INFO 13640 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1022 ms
+2019-08-10 13:24:39.901  INFO 13640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-10 13:24:40.751  INFO 13640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-10 13:24:40.817  INFO 13640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-08-10 13:24:40.865  INFO 13640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-08-10 13:24:40.866  INFO 13640 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-08-10 13:24:41.023  INFO 13640 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-08-10 13:24:41.128  INFO 13640 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-08-10 13:24:41.430  INFO 13640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-08-10 13:24:41.665  INFO 13640 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55fee662, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d901f20, org.springframework.security.web.header.HeaderWriterFilter@2db2a05f, org.springframework.security.web.authentication.logout.LogoutFilter@56dd6efa, in.yis.mains.config.JwtRequestFilter@67ec8477, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1015a4b9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@784223e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54089484, org.springframework.security.web.session.SessionManagementFilter@1e4c6583, org.springframework.security.web.access.ExceptionTranslationFilter@7102ac3e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@708eb310]
+2019-08-10 13:24:41.808  INFO 13640 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-10 13:24:41.836  WARN 13640 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-10 13:24:41.998  INFO 13640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-10 13:24:42.000  INFO 13640 --- [main] in.yis.mains.YesExamApplication          : Started YesExamApplication in 3.557 seconds (JVM running for 4.05)
+2019-08-10 13:24:56.511  INFO 13640 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-10 13:24:56.511  INFO 13640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-10 13:24:56.517  INFO 13640 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-08-10 13:24:56.529  WARN 13640 --- [http-nio-8080-exec-1] in.yis.mains.config.JwtRequestFilter     : JWT Token does not begin with Bearer String

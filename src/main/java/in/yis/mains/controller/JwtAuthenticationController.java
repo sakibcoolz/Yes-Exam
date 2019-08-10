@@ -54,4 +54,10 @@ public class JwtAuthenticationController {
 			throw new Exception("INVALID_CREDENTIALS", e);
 		}
 	}
+	
+	@RequestMapping({ "/hellos" })
+	public String hello() {
+		return "Hello World from sakib";
+	}
+
 }
