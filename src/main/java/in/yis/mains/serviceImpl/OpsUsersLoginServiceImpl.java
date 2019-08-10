@@ -1,0 +1,23 @@
+package in.yis.mains.serviceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
+import in.yis.mains.dao.OpsUsersLoginDao;
+import in.yis.mains.model.OpsUsersLogin;
+import in.yis.mains.service.OpsUsersLoginService;
+
+@Repository
+public class OpsUsersLoginServiceImpl implements OpsUsersLoginService {
+
+	@Autowired
+	OpsUsersLoginDao opsUsersLoginDao;
+	
+	public OpsUsersLogin register(OpsUsersLogin opsUsersLogin) {
+		// TODO Auto-generated method stub
+		System.out.println("serimpl "+opsUsersLogin.toString());
+		return opsUsersLoginDao.register( opsUsersLogin);
+	}
+
+}
