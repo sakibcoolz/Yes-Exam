@@ -2384,3 +2384,8 @@ java.lang.NullPointerException: null
 2019-08-11 02:38:36.566  WARN 5936 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-11 02:38:36.726  INFO 5936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2019-08-11 02:38:36.728  INFO 5936 --- [main] in.yis.mains.YesExamApplication          : Started YesExamApplication in 4.12 seconds (JVM running for 4.63)
+2019-08-11 02:40:04.287  INFO 5936 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-08-11 02:40:04.291  INFO 5936 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 02:40:04.292  INFO 5936 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-11 02:40:04.295  INFO 5936 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-11 02:40:04.302  INFO 5936 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

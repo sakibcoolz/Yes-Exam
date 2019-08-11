@@ -2,7 +2,6 @@ package in.yis.mains.daoImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 import in.yis.mains.dao.OpsUsersLoginDao;
 import in.yis.mains.model.OpsUsersLogin;
