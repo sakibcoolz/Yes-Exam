@@ -19,4 +19,5 @@ public class OpsUsersLoginServiceImpl implements OpsUsersLoginService {
 		return opsUsersLoginDao.register( opsUsersLogin);
 	}
 
+	
 }
