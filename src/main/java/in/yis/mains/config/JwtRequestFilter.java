@@ -30,13 +30,14 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
 			throws ServletException, IOException {
-
+		System.out.println("Req Filter 1");
 		final String requestTokenHeader = request.getHeader("Authorization");
-
+		System.out.println("Req Filter 2 => "+requestTokenHeader);
 		String username = null;
 		String jwtToken = null;
 		// JWT Token is in the form "Bearer token". Remove Bearer word and get only the Token
 		if (requestTokenHeader != null && requestTokenHeader.startsWith("Bearer ")) {
+			System.out.println("Req Filter 2.1 token not null => "+requestTokenHeader);
 			jwtToken = requestTokenHeader.substring(7);
 			try {
 				username = jwtTokenUtil.getUsernameFromToken(jwtToken);
@@ -51,6 +52,8 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 
 		//Once we get the token validate it.
 		if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+			System.out.println("Req Filter 2.2  => "+username);
+			System.out.println("Req Filter 2.3  => "+SecurityContextHolder.getContext().getAuthentication());
 			UserDetails userDetails = this.jwtUserDetailsService.loadUserByUsername(username);
 			// if token is valid configure Spring Security to manually set authentication
 			if (jwtTokenUtil.validateToken(jwtToken, userDetails)) {
@@ -66,5 +69,4 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 		}
 		chain.doFilter(request, response);
 	}
-
 }

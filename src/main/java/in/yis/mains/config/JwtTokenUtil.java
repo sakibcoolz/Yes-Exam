@@ -61,6 +61,7 @@ public class JwtTokenUtil implements Serializable {
 	}
 
 	private String doGenerateToken(Map<String, Object> claims, String subject) {
+		System.out.println("Token gen "+claims+" sub "+subject);
 		return Jwts.builder()
 				.setClaims(claims)
 				.claim("msg", "sakib mulla")

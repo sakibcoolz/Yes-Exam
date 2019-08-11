@@ -3,6 +3,7 @@ package in.yis.mains.controller;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,9 @@ public class HelloWorldController {
 	@Autowired
 	OpsUsersLoginService opsUsersLoginService;
 	
+	@Autowired
+	PasswordEncoder passwordEncoder;
+	
 	
 	Logger logger = LogManager.getLogger(HelloWorldController.class);
 	@RequestMapping({ "/hello" })
@@ -37,6 +41,7 @@ public class HelloWorldController {
 	@RequestMapping(value="/register", method=RequestMethod.POST)
 	public OpsUsersLogin register(@RequestBody OpsUsersLogin opsUsersLogin ) {
 		System.out.println(opsUsersLogin.toString());
+		opsUsersLogin.setPassword(passwordEncoder.encode(opsUsersLogin.getPassword()));
 		return opsUsersLoginService.register(opsUsersLogin);
 	}
 

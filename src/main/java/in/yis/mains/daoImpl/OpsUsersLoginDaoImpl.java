@@ -21,4 +21,10 @@ public class OpsUsersLoginDaoImpl implements OpsUsersLoginDao {
 		return opsUsersLoginRepo.save(opsUsersLogin);
 	}
 
+	@Override
+	public OpsUsersLogin getUserByUsername(String username) {
+		// TODO Auto-generated method stub
+		return opsUsersLoginRepo.findByUsername(username);
+	}
+
 }

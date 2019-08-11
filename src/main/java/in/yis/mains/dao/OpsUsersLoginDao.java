@@ -6,4 +6,6 @@ public interface OpsUsersLoginDao {
 
 	OpsUsersLogin register(OpsUsersLogin opsUsersLogin);
 
+	OpsUsersLogin getUserByUsername(String username);
+
 }

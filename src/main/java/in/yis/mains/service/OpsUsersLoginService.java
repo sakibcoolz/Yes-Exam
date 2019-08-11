@@ -6,4 +6,6 @@ public interface OpsUsersLoginService {
 
 	OpsUsersLogin register(OpsUsersLogin opsUsersLogin);
 
+	OpsUsersLogin getUserByUsername(String username);
+
 }

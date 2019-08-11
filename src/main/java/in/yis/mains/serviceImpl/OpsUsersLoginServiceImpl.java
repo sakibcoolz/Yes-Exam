@@ -19,5 +19,11 @@ public class OpsUsersLoginServiceImpl implements OpsUsersLoginService {
 		return opsUsersLoginDao.register( opsUsersLogin);
 	}
 
+	@Override
+	public OpsUsersLogin getUserByUsername(String username) {
+		// TODO Auto-generated method stub
+		return opsUsersLoginDao.getUserByUsername( username);
+	}
+
 	
 }
