@@ -9,6 +9,7 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,11 +34,10 @@ public class JwtAuthenticationController {
 	@Autowired
 	private JwtUserDetailsService jwtInMemoryUserDetailsService;
 	
+	@Autowired
+	PasswordEncoder passwordEncoder;
 	
-	
-//	static String sk;
-	
-	
+	static String sk;
 	
 	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
@@ -54,6 +54,7 @@ public class JwtAuthenticationController {
 	@RequestMapping(value = "/authenticates", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationTokens(@RequestBody JwtRequest authenticationRequest) throws Exception {
 		System.out.println("step 1");
+		System.out.println(passwordEncoder.encode(authenticationRequest.getPassword()));
 		authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
 		System.out.println("step 5");
 		final UserDetails userDetails = jwtInMemoryUserDetailsService
