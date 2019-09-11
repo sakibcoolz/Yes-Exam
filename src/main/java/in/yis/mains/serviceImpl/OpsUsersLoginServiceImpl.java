@@ -13,6 +13,7 @@ public class OpsUsersLoginServiceImpl implements OpsUsersLoginService {
 	@Autowired
 	OpsUsersLoginDao opsUsersLoginDao;
 	
+	@Override
 	public OpsUsersLogin register(OpsUsersLogin opsUsersLogin) {
 		// TODO Auto-generated method stub
 		System.out.println("serimpl "+opsUsersLogin.toString());

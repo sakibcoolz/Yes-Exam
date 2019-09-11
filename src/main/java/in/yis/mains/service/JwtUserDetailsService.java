@@ -7,13 +7,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-import com.google.gson.Gson;
 
 import in.yis.mains.model.OpsUsersLogin;
 import in.yis.mains.model.Privilege;
@@ -27,9 +24,9 @@ public class JwtUserDetailsService implements UserDetailsService {
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		System.out.println("step 6");
+		System.out.println("step 6  "+username);
 		OpsUsersLogin opslogin = opsUsersLoginService.getUserByUsername(username);
-		System.out.println(opslogin.toString());
+		System.out.println(" step 6.1 "+opslogin.toString());
 //		Gson gson = new Gson();
 //		String json = gson.toJson(opslogin);
 //		System.out.println("JSON = " + json);
@@ -59,7 +56,7 @@ public class JwtUserDetailsService implements UserDetailsService {
 		        return getGrantedAuthorities(getPrivileges(roles));
 		    }
 		 
-		    private List<String> getPrivileges(Collection<Role> roles) {
+	private List<String> getPrivileges(Collection<Role> roles) {
 		  
 		        List<String> privileges = new ArrayList<>();
 		        List<Privilege> collection = new ArrayList<>();

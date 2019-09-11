@@ -1,12 +1,6 @@
 	package in.yis.mains.config;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +9,6 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import in.yis.mains.model.OpsUsersLogin;
-import in.yis.mains.model.Privilege;
-import in.yis.mains.model.Role;
 import in.yis.mains.repo.OpsUsersLoginRepo;
 import in.yis.mains.repo.PrivilegeRepository;
 import in.yis.mains.repo.RoleRepository;

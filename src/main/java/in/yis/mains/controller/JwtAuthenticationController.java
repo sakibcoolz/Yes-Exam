@@ -52,9 +52,9 @@ public class JwtAuthenticationController {
 	
 	//	add for ops users
 	@RequestMapping(value = "/authenticates", method = RequestMethod.POST)
-	public ResponseEntity<?> createAuthenticationTokens(@RequestBody JwtRequest authenticationRequest) throws Exception {
+	public ResponseEntity<?> createAuthenticationTokenss(@RequestBody JwtRequest authenticationRequest) throws Exception {
 		System.out.println("step 1");
-		System.out.println(passwordEncoder.encode(authenticationRequest.getPassword()));
+		//System.out.println(passwordEncoder.encode(authenticationRequest.getPassword()));
 		authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
 		System.out.println("step 5");
 		final UserDetails userDetails = jwtInMemoryUserDetailsService
